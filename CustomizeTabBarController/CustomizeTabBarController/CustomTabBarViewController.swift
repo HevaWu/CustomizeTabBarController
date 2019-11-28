@@ -37,17 +37,22 @@ class CustomTabBarViewController: UITabBarController {
         tabBar.tintColor = .black
         
         let firstViewController = FirstViewController()
-        firstViewController.tabBarItem.title = "First"
+        firstViewController.title = "First"
         
         let secondViewController = SecondViewController()
-        secondViewController.tabBarItem.title = "Second"
+        secondViewController.title = "Second"
         
-        setViewControllers([firstViewController, secondViewController], animated: true)
+        var viewControllers = [UIViewController]()
+        for viewController in [firstViewController, secondViewController] {
+            viewControllers.append(UINavigationController(rootViewController: viewController))
+        }
+        setViewControllers(viewControllers, animated: true)
     }
     
     @objc
     private func tapCenterButton(_ sender: UIButton) {
         let centerViewController = CenterViewController()
-        navigationController?.pushViewController(centerViewController, animated: true)
+        centerViewController.hidesBottomBarWhenPushed = true
+        (selectedViewController as? UINavigationController)?.pushViewController(centerViewController, animated: true)
     }
 }
