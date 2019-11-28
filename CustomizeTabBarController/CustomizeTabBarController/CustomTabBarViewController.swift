@@ -18,6 +18,14 @@ class CustomTabBarViewController: UITabBarController {
         configureTabBarItems()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        view.bringSubviewToFront(centerButton)
+        centerButton.center = CGPoint(x: tabBar.center.x, y: tabBar.frame.origin.y)
+        centerButton.layer.zPosition = 1
+    }
+    
     private func configureCenterButton() {
         centerButton.backgroundColor = .yellow
         centerButton.layer.cornerRadius = 25
@@ -35,6 +43,18 @@ class CustomTabBarViewController: UITabBarController {
     
     private func configureTabBarItems() {
         tabBar.tintColor = .black
+        
+        let itemCount: CGFloat = 2
+        let itemSpacing: CGFloat = view.frame.width / (itemCount + 1)
+        let itemWidth: CGFloat = (view.frame.width - itemSpacing - 1) / CGFloat(itemCount)
+        
+        let appearance = tabBar.standardAppearance
+        
+        appearance.stackedItemSpacing = itemSpacing
+        appearance.stackedItemWidth = itemWidth
+        appearance.stackedItemPositioning = .centered
+        
+        tabBar.standardAppearance = appearance
         
         let firstViewController = FirstViewController()
         firstViewController.title = "First"
