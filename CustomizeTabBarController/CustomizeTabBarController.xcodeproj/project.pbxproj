@@ -13,6 +13,7 @@
 		F004D886238BB00A008133C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F004D884238BB00A008133C9 /* Main.storyboard */; };
 		F004D888238BB00C008133C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F004D887238BB00C008133C9 /* Assets.xcassets */; };
 		F004D88B238BB00C008133C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F004D889238BB00C008133C9 /* LaunchScreen.storyboard */; };
+		F004D8A9238FA52E008133C9 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = F004D8A8238FA52E008133C9 /* IDETemplateMacros.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F004D887238BB00C008133C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F004D88A238BB00C008133C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F004D88C238BB00C008133C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F004D8A8238FA52E008133C9 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F004D887238BB00C008133C9 /* Assets.xcassets */,
 				F004D889238BB00C008133C9 /* LaunchScreen.storyboard */,
 				F004D88C238BB00C008133C9 /* Info.plist */,
+				F004D8A8238FA52E008133C9 /* IDETemplateMacros.plist */,
 			);
 			path = CustomizeTabBarController;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F004D8A9238FA52E008133C9 /* IDETemplateMacros.plist in Resources */,
 				F004D88B238BB00C008133C9 /* LaunchScreen.storyboard in Resources */,
 				F004D888238BB00C008133C9 /* Assets.xcassets in Resources */,
 				F004D886238BB00A008133C9 /* Main.storyboard in Resources */,
