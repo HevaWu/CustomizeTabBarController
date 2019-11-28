@@ -9,6 +9,7 @@
 import UIKit
 
 class CustomTabBarViewController: UITabBarController {
+    private let centerButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +19,9 @@ class CustomTabBarViewController: UITabBarController {
     }
     
     private func configureCenterButton() {
-        let centerButton = UIButton()
         centerButton.backgroundColor = .yellow
         centerButton.layer.cornerRadius = 25
+        centerButton.addTarget(self, action: #selector(tapCenterButton(_:)), for: .touchUpInside)
         
         view.addSubview(centerButton)
         centerButton.translatesAutoresizingMaskIntoConstraints = false
@@ -42,5 +43,11 @@ class CustomTabBarViewController: UITabBarController {
         secondViewController.tabBarItem.title = "Second"
         
         setViewControllers([firstViewController, secondViewController], animated: true)
+    }
+    
+    @objc
+    private func tapCenterButton(_ sender: UIButton) {
+        let centerViewController = CenterViewController()
+        navigationController?.pushViewController(centerViewController, animated: true)
     }
 }

@@ -19,6 +19,8 @@
 		F004D8B5238FAC47008133C9 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F004D8B3238FAC47008133C9 /* FirstViewController.xib */; };
 		F004D8B8238FAC59008133C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004D8B6238FAC59008133C9 /* SecondViewController.swift */; };
 		F004D8B9238FAC59008133C9 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F004D8B7238FAC59008133C9 /* SecondViewController.xib */; };
+		F004D8BC238FAEC5008133C9 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004D8BA238FAEC5008133C9 /* CenterViewController.swift */; };
+		F004D8BD238FAEC5008133C9 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F004D8BB238FAEC5008133C9 /* CenterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F004D8B3238FAC47008133C9 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		F004D8B6238FAC59008133C9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F004D8B7238FAC59008133C9 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		F004D8BA238FAEC5008133C9 /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		F004D8BB238FAEC5008133C9 /* CenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				F004D8B3238FAC47008133C9 /* FirstViewController.xib */,
 				F004D8B6238FAC59008133C9 /* SecondViewController.swift */,
 				F004D8B7238FAC59008133C9 /* SecondViewController.xib */,
+				F004D8BA238FAEC5008133C9 /* CenterViewController.swift */,
+				F004D8BB238FAEC5008133C9 /* CenterViewController.xib */,
 				F004D8AA238FA703008133C9 /* CustomTabBarViewController.swift */,
 				F004D8AB238FA703008133C9 /* CustomTabBarViewController.xib */,
 				F004D882238BB00A008133C9 /* ViewController.swift */,
@@ -143,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F004D8BD238FAEC5008133C9 /* CenterViewController.xib in Resources */,
 				F004D8AD238FA703008133C9 /* CustomTabBarViewController.xib in Resources */,
 				F004D8B5238FAC47008133C9 /* FirstViewController.xib in Resources */,
 				F004D8B9238FAC59008133C9 /* SecondViewController.xib in Resources */,
@@ -162,6 +169,7 @@
 				F004D8B8238FAC59008133C9 /* SecondViewController.swift in Sources */,
 				F004D8B4238FAC47008133C9 /* FirstViewController.swift in Sources */,
 				F004D883238BB00A008133C9 /* ViewController.swift in Sources */,
+				F004D8BC238FAEC5008133C9 /* CenterViewController.swift in Sources */,
 				F004D87F238BB00A008133C9 /* AppDelegate.swift in Sources */,
 				F004D8AC238FA703008133C9 /* CustomTabBarViewController.swift in Sources */,
 				F004D881238BB00A008133C9 /* SceneDelegate.swift in Sources */,
