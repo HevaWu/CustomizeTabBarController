@@ -74,12 +74,7 @@
 			children = (
 				F004D87E238BB00A008133C9 /* AppDelegate.swift */,
 				F004D880238BB00A008133C9 /* SceneDelegate.swift */,
-				F004D8B2238FAC47008133C9 /* FirstViewController.swift */,
-				F004D8B3238FAC47008133C9 /* FirstViewController.xib */,
-				F004D8B6238FAC59008133C9 /* SecondViewController.swift */,
-				F004D8B7238FAC59008133C9 /* SecondViewController.xib */,
-				F004D8BA238FAEC5008133C9 /* CenterViewController.swift */,
-				F004D8BB238FAEC5008133C9 /* CenterViewController.xib */,
+				F004D8BE238FE7B5008133C9 /* ViewControllers */,
 				F004D8AA238FA703008133C9 /* CustomTabBarViewController.swift */,
 				F004D8AB238FA703008133C9 /* CustomTabBarViewController.xib */,
 				F004D882238BB00A008133C9 /* ViewController.swift */,
@@ -89,6 +84,19 @@
 				F004D88C238BB00C008133C9 /* Info.plist */,
 			);
 			path = CustomizeTabBarController;
+			sourceTree = "<group>";
+		};
+		F004D8BE238FE7B5008133C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F004D8B2238FAC47008133C9 /* FirstViewController.swift */,
+				F004D8B3238FAC47008133C9 /* FirstViewController.xib */,
+				F004D8B6238FAC59008133C9 /* SecondViewController.swift */,
+				F004D8B7238FAC59008133C9 /* SecondViewController.xib */,
+				F004D8BA238FAEC5008133C9 /* CenterViewController.swift */,
+				F004D8BB238FAEC5008133C9 /* CenterViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
