@@ -13,7 +13,7 @@ class CustomTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         configureCenterButton()
         configureTabBarItems()
     }
@@ -73,6 +73,18 @@ class CustomTabBarViewController: UITabBarController {
     private func tapCenterButton(_ sender: UIButton) {
         let centerViewController = CenterViewController()
         centerViewController.hidesBottomBarWhenPushed = true
-        (selectedViewController as? UINavigationController)?.pushViewController(centerViewController, animated: true)
+        let selectedNavigationController = selectedViewController as? UINavigationController
+        selectedNavigationController?.delegate = self
+        selectedNavigationController?.pushViewController(centerViewController, animated: true)
+    }
+}
+
+extension CustomTabBarViewController: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController.hidesBottomBarWhenPushed {
+            centerButton.isHidden = true
+        } else {
+            centerButton.isHidden = false
+        }
     }
 }
