@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func tapButton(_ sender: Any) {
+        let customTabBarController = CustomTabBarViewController()
+        present(customTabBarController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

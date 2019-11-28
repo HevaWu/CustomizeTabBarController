@@ -13,7 +13,12 @@
 		F004D886238BB00A008133C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F004D884238BB00A008133C9 /* Main.storyboard */; };
 		F004D888238BB00C008133C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F004D887238BB00C008133C9 /* Assets.xcassets */; };
 		F004D88B238BB00C008133C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F004D889238BB00C008133C9 /* LaunchScreen.storyboard */; };
-		F004D8A9238FA52E008133C9 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = F004D8A8238FA52E008133C9 /* IDETemplateMacros.plist */; };
+		F004D8AC238FA703008133C9 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004D8AA238FA703008133C9 /* CustomTabBarViewController.swift */; };
+		F004D8AD238FA703008133C9 /* CustomTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F004D8AB238FA703008133C9 /* CustomTabBarViewController.xib */; };
+		F004D8B4238FAC47008133C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004D8B2238FAC47008133C9 /* FirstViewController.swift */; };
+		F004D8B5238FAC47008133C9 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F004D8B3238FAC47008133C9 /* FirstViewController.xib */; };
+		F004D8B8238FAC59008133C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004D8B6238FAC59008133C9 /* SecondViewController.swift */; };
+		F004D8B9238FAC59008133C9 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F004D8B7238FAC59008133C9 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +30,12 @@
 		F004D887238BB00C008133C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F004D88A238BB00C008133C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F004D88C238BB00C008133C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F004D8A8238FA52E008133C9 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
+		F004D8AA238FA703008133C9 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		F004D8AB238FA703008133C9 /* CustomTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarViewController.xib; sourceTree = "<group>"; };
+		F004D8B2238FAC47008133C9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F004D8B3238FAC47008133C9 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		F004D8B6238FAC59008133C9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F004D8B7238FAC59008133C9 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +70,17 @@
 			children = (
 				F004D87E238BB00A008133C9 /* AppDelegate.swift */,
 				F004D880238BB00A008133C9 /* SceneDelegate.swift */,
+				F004D8B2238FAC47008133C9 /* FirstViewController.swift */,
+				F004D8B3238FAC47008133C9 /* FirstViewController.xib */,
+				F004D8B6238FAC59008133C9 /* SecondViewController.swift */,
+				F004D8B7238FAC59008133C9 /* SecondViewController.xib */,
+				F004D8AA238FA703008133C9 /* CustomTabBarViewController.swift */,
+				F004D8AB238FA703008133C9 /* CustomTabBarViewController.xib */,
 				F004D882238BB00A008133C9 /* ViewController.swift */,
 				F004D884238BB00A008133C9 /* Main.storyboard */,
 				F004D887238BB00C008133C9 /* Assets.xcassets */,
 				F004D889238BB00C008133C9 /* LaunchScreen.storyboard */,
 				F004D88C238BB00C008133C9 /* Info.plist */,
-				F004D8A8238FA52E008133C9 /* IDETemplateMacros.plist */,
 			);
 			path = CustomizeTabBarController;
 			sourceTree = "<group>";
@@ -128,7 +143,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F004D8A9238FA52E008133C9 /* IDETemplateMacros.plist in Resources */,
+				F004D8AD238FA703008133C9 /* CustomTabBarViewController.xib in Resources */,
+				F004D8B5238FAC47008133C9 /* FirstViewController.xib in Resources */,
+				F004D8B9238FAC59008133C9 /* SecondViewController.xib in Resources */,
 				F004D88B238BB00C008133C9 /* LaunchScreen.storyboard in Resources */,
 				F004D888238BB00C008133C9 /* Assets.xcassets in Resources */,
 				F004D886238BB00A008133C9 /* Main.storyboard in Resources */,
@@ -142,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F004D8B8238FAC59008133C9 /* SecondViewController.swift in Sources */,
+				F004D8B4238FAC47008133C9 /* FirstViewController.swift in Sources */,
 				F004D883238BB00A008133C9 /* ViewController.swift in Sources */,
 				F004D87F238BB00A008133C9 /* AppDelegate.swift in Sources */,
+				F004D8AC238FA703008133C9 /* CustomTabBarViewController.swift in Sources */,
 				F004D881238BB00A008133C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
